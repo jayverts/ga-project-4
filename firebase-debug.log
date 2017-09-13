@@ -1,0 +1,28 @@
+[debug] [2017-09-13T03:39:14.013Z] ----------------------------------------------------------------------
+[debug] [2017-09-13T03:39:14.018Z] Command:       /usr/local/Cellar/node/8.1.2/bin/node /usr/local/bin/firebase serve
+[debug] [2017-09-13T03:39:14.018Z] CLI Version:   3.10.1
+[debug] [2017-09-13T03:39:14.018Z] Platform:      darwin
+[debug] [2017-09-13T03:39:14.018Z] Node Version:  v8.1.2
+[debug] [2017-09-13T03:39:14.115Z] Time:          Tue Sep 12 2017 21:39:14 GMT-0600 (MDT)
+[debug] [2017-09-13T03:39:14.115Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-13T03:39:14.304Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-13T03:39:14.304Z] > authorizing via signed-in user
+[debug] [2017-09-13T03:39:14.308Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/project4-75b45  
+ Tue Sep 12 2017 21:39:14 GMT-0600 (MDT)
+[debug] [2017-09-13T03:39:14.859Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-13T03:39:14.861Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/project4-75b45/tokens  
+ Tue Sep 12 2017 21:39:14 GMT-0600 (MDT)
+[debug] [2017-09-13T03:39:17.774Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/jverdolino/Desktop/ga-project-4'...
+[info] 
+[debug] [2017-09-13T03:39:17.780Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/project4-75b45  
+ Tue Sep 12 2017 21:39:17 GMT-0600 (MDT)
+[debug] [2017-09-13T03:39:18.389Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-13T03:39:18.390Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/826584543214/clients/_:getWebAppConfig  
+ Tue Sep 12 2017 21:39:18 GMT-0600 (MDT)
+[debug] [2017-09-13T03:39:18.809Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
