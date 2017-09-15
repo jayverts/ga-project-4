@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html>
+ 
+<head>
+    <title>Movie Fire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ 
+<body>
+    <h1>Movie Fire</h1>
+    <h3>Save all your Favorite Movies here</h3>
+    <hr />
+    <input type="text" id="movieName" placeholder="Enter your Favorite Movie Name" onkeypress="return saveToList(event)" />
+    <h4>My Favorite Movies</h4>
+    <ol id="favMovies">
+    </ol>
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+</body>
+ 
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
 <head>
   <title>Totally Tubular Therapists</title>
 </head>
@@ -26,4 +55,4 @@
 </script>
 
 </body>
-</html>
+</html> -->
