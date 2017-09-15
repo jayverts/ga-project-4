@@ -1,58 +1,21 @@
 <!DOCTYPE html>
 <html>
- 
-<head>
-    <title>Movie Fire</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
- 
-<body>
-    <h1>Movie Fire</h1>
-    <h3>Save all your Favorite Movies here</h3>
-    <hr />
-    <input type="text" id="movieName" placeholder="Enter your Favorite Movie Name" onkeypress="return saveToList(event)" />
-    <h4>My Favorite Movies</h4>
-    <ol id="favMovies">
-    </ol>
-    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-</body>
- 
-</html>
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
 <head>
   <title>Totally Tubular Therapists</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1>Welcome To My Site!</h1>
-<a href="email.html">Sign Up</a>
-<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-messaging.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBkqb3aGwZVg8V0IQuJDQLiQyjWZNncWIY",
-    authDomain: "project4-75b45.firebaseapp.com",
-    databaseURL: "https://project4-75b45.firebaseio.com",
-    projectId: "project4-75b45",
-    storageBucket: "project4-75b45.appspot.com",
-    messagingSenderId: "826584543214"
-  };
-  firebase.initializeApp(config);
-  var database = firebase.database();
-</script>
-
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo left">&nbsp;&nbsp;Therapists Of Colorado</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="email.html">LogIn</a></li>
+      </ul>
+    </div>
+  </nav>
+<script type="text/javascript" src="app.js"></script>     
 </body>
-</html> -->
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script type="text/javascript">
+  function getUserMedia(options, successCallback, failureCallback) {
+  var api = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+    navigator.mozGetUserMedia || navigator.msGetUserMedia;
+  if (api) {
+    return api.bind(navigator)(options, successCallback, failureCallback);
+  }
+  alert('User Media API not supported.');
+}
+
+var theStream;
+
+function getStream() {
+  var constraints = {
+    video: true
+  };
+
+  getUserMedia(constraints, function(stream) {
+    var mediaControl = document.querySelector('video');
+    if (navigator.mozGetUserMedia) {
+      mediaControl.mozSrcObject = stream;
+    } else {
+      mediaControl.srcObject = stream;
+      mediaControl.src = (window.URL || window.webkitURL).createObjectURL(stream);
+    }
+    theStream = stream;
+  }, function(err) {
+    alert('Error: ' + err);
+  });
+}
+
+function takePhoto() {
+  if (!('ImageCapture' in window)) {
+    alert('ImageCapture is not available');
+  }
+  
+  var theImageCapturer = new ImageCapture(theStream.getVideoTracks()[0]);
+
+  theImageCapturer.takePhoto()
+    .then(blob => {
+      var theImageTag = document.getElementById("imageTag");
+      theImageTag.src = URL.createObjectURL(blob);
+    })
+    .catch(err => alert('Error: ' + err));
+}</script>
+<p><button class="btn btn-lg btn-primary" onclick="getStream()">Start Video Chat</button></p>
+<p><video autoplay style="height: 800px; width: 800px;"></video></p>
+
+</body>
+</html>
