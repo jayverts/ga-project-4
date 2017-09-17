@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Totally Tubular Therapists</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Totally Tubular Therapists</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Therapy Plans</h1>
-    <h3>Add therapy plan here.</h3>
-    <hr />
-    <input type="text" id="planForm" placeholder="Type Therapy Plan..." onkeypress="return saveToList(event)" />
-    <h4>Your Therapy Plan</h4>
-    <ol id="therapyPlan">
-    </ol>
-    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-    <script type="text/javascript" src="app.js"></script>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo left">&nbsp;&nbsp;Therapists of Colorado</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="email.html">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Jeremy's Therapy Plan</h1>
+  <hr />
+  <input type="text" id="planForm" placeholder="Type Therapy Plan..." onkeypress="return saveToList(event)" />
+  <h4>Your Therapy Plan</h4>
+  <ol id="therapyPlan">
+  </ol>
+  <a class="waves-effect waves-light btn-large" href="videoChat.html"><i class="material-icons left">video_call</i>Video Chat</a>
+  <a class="waves-effect waves-light btn-large"><i class="material-icons left">call_to_action</i>Book an Appt</a>
+<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+<script type="text/javascript" src="app.js"></script>
 </body> 
 </html>
 

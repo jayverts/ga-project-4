@@ -50,8 +50,8 @@ function takePhoto() {
     })
     .catch(err => alert('Error: ' + err));
 }</script>
-<p><button class="btn btn-lg btn-primary" onclick="getStream()">Start Video Chat</button></p>
-<p><video autoplay style="height: 800px; width: 800px;"></video></p>
+<div id="startVideo"><button class="btn btn-lg btn-primary" onclick="getStream()">Start Video Chat</button></div>
+<div id="videoPlayer"><video autoplay style="height: 800px; width: 800px;"></video></div>
 
 </body>
 </html>
