@@ -28,3 +28,11 @@ Working through some bugs but I think I made a break through. I have the databas
 9/16/2017
 -----------
 Today I am going to try to put some CSS into it. I need to start preparing this thing to present. We will see how it goes! 
+
+9/17/2017
+----------
+I need to make sure today, I get this as close as presentable as possible. I will be adding more styles and makes sure everything is functioning properly
+
+9/18/2017
+-----------
+Presentation day! Wooooo!
