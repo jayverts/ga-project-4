@@ -47,7 +47,8 @@ button {
   height: 100px;
   width: 100px;
   font-size: 15px;
-  background: #5c6bc0;
+  background: #455a64;
+  color: white;
 }
 
 #videoPlayer {
