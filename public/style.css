@@ -10,9 +10,12 @@ body {
 
 h1,h3 {
 	text-align: center;
-	color: #787878;
+	color: #263238;
 }
 
+h5{
+  color: #0277bd;
+}
 .nav-wrapper{
   background: #314755 !important;
   background: -webkit-linear-gradient(to right, #26a0da, #314755) !important;
